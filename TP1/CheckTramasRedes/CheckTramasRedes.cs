@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.IO;
-namespace CheckTramasRedes;
+
 /* Para realizar el trabajo se tomó un enfoque que utiliza etapas, es decir, la fase de "búsqueda" de la bandera se da en la etapa 0, luego,
 en la etapa 1 se verifica la longitud y se pasa a la etapa 2, en ella se va "contando", sumando y se va verificando que no aparezca una nueva bandera 7E en medio, por último, en la
 etapa 3 se verifica el checksum de la trama utilizando la información de la anterior etapa. 
@@ -61,6 +61,8 @@ class CheckTramasRedes {
                     } else {
                         if ((actualByte == "7E") && (line.Substring(i-2,2) == "7D")) {
                             cantSecuenciaEscape = cantSecuenciaEscape + 1;
+                            suma = suma - Convert.ToInt32("7D", 16);
+                            decLength = decLength + 1;
                         }
                         //Se decrementa la longitud, encontrada en la etapa anterior, por cada byte
                         decLength = decLength - 1;
