@@ -1,0 +1,5 @@
+E:\Universidad\Redes\CheckTramasRedes\bin\Release\net8.0\linux-x64\publish\CheckTramasRedes
+E:\Universidad\Redes\CheckTramasRedes\bin\Release\net8.0\linux-x64\publish\CheckTramasRedes.dll
+E:\Universidad\Redes\CheckTramasRedes\bin\Release\net8.0\linux-x64\publish\CheckTramasRedes.deps.json
+E:\Universidad\Redes\CheckTramasRedes\bin\Release\net8.0\linux-x64\publish\CheckTramasRedes.runtimeconfig.json
+E:\Universidad\Redes\CheckTramasRedes\bin\Release\net8.0\linux-x64\publish\CheckTramasRedes.pdb

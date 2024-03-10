@@ -1,0 +1,15 @@
+E:\Universidad\Redes\CheckTramasRedes\bin\Release\net8.0\linux-x64\CheckTramasRedes
+E:\Universidad\Redes\CheckTramasRedes\bin\Release\net8.0\linux-x64\CheckTramasRedes.deps.json
+E:\Universidad\Redes\CheckTramasRedes\bin\Release\net8.0\linux-x64\CheckTramasRedes.runtimeconfig.json
+E:\Universidad\Redes\CheckTramasRedes\bin\Release\net8.0\linux-x64\CheckTramasRedes.dll
+E:\Universidad\Redes\CheckTramasRedes\bin\Release\net8.0\linux-x64\CheckTramasRedes.pdb
+E:\Universidad\Redes\CheckTramasRedes\obj\Release\net8.0\linux-x64\CheckTramasRedes.GeneratedMSBuildEditorConfig.editorconfig
+E:\Universidad\Redes\CheckTramasRedes\obj\Release\net8.0\linux-x64\CheckTramasRedes.AssemblyInfoInputs.cache
+E:\Universidad\Redes\CheckTramasRedes\obj\Release\net8.0\linux-x64\CheckTramasRedes.AssemblyInfo.cs
+E:\Universidad\Redes\CheckTramasRedes\obj\Release\net8.0\linux-x64\CheckTramasRedes.csproj.CoreCompileInputs.cache
+E:\Universidad\Redes\CheckTramasRedes\obj\Release\net8.0\linux-x64\CheckTramasRedes.sourcelink.json
+E:\Universidad\Redes\CheckTramasRedes\obj\Release\net8.0\linux-x64\CheckTramasRedes.dll
+E:\Universidad\Redes\CheckTramasRedes\obj\Release\net8.0\linux-x64\refint\CheckTramasRedes.dll
+E:\Universidad\Redes\CheckTramasRedes\obj\Release\net8.0\linux-x64\CheckTramasRedes.pdb
+E:\Universidad\Redes\CheckTramasRedes\obj\Release\net8.0\linux-x64\CheckTramasRedes.genruntimeconfig.cache
+E:\Universidad\Redes\CheckTramasRedes\obj\Release\net8.0\linux-x64\ref\CheckTramasRedes.dll

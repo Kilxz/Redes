@@ -1,0 +1,5 @@
+E:\Universidad\Redes\CheckTramasRedes\Windows\CheckTramasRedes.exe
+E:\Universidad\Redes\CheckTramasRedes\Windows\CheckTramasRedes.dll
+E:\Universidad\Redes\CheckTramasRedes\Windows\CheckTramasRedes.deps.json
+E:\Universidad\Redes\CheckTramasRedes\Windows\CheckTramasRedes.runtimeconfig.json
+E:\Universidad\Redes\CheckTramasRedes\Windows\CheckTramasRedes.pdb
