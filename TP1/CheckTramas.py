@@ -11,7 +11,7 @@ def checkSum(suma, verificador):
 
 
 #Se abre el archivo
-fileLine = open("/home/estudiante/Redes/TP1/Tramas_802-15-4.log", "r")
+fileLine = open("Tramas_802-15-4.log", "r")
 line = fileLine.readline()
 
 #Se declaran variables y se inicializan
