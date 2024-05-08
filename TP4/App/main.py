@@ -6,7 +6,7 @@ def menu():
     print("2. Otro")
     print("3. Salir")
     print("=================================")
-    option = int(input("Elija una opcion: "))
+    option = int(input("Elija una opción: "))
     return option
 
 if __name__ == "__main__":
