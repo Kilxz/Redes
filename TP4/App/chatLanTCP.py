@@ -2,7 +2,7 @@ import socket
 import threading
 
 #Función utilizada para enviar mensajes a través de la red
-def cliente(ip):
+def cliente():
     """
     La función es utilizada para enviar mensajes a través de la red. Se crea un socket utilizado solo
     para enviar mensajes. Luego, se habilita para enviar mensajes a la ip de broadcast. Luego, se
@@ -14,12 +14,12 @@ def cliente(ip):
 
     """
     global stop
+    ip = input("Ingrese ip: ")
     socketClient = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     socketClient.connect((ip, 60001))
     while stop != True:
         message = input()
         socketClient.send(message.encode())
-
         if message == "exit":
             stop = True
             socketClient.close()
@@ -37,14 +37,14 @@ def server():
     """
     global stop
     socketServer = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    socketServer.bind(('0.0.0.0', 60001))
+    socketServer.bind(('10.65.4.102', 60001))
     socketServer.listen(5)
+    (cliente, address) = socketServer.accept()
     while stop != True:
-        (cliente, address) = socketServer.accept()
         message = cliente.recv(100).decode("utf-8")
         if message == "exit":
             stop = True
-    print(message)
+        print(message)
 
     return 0
 
@@ -59,12 +59,10 @@ def initialize():
     :return: 0. Para indicar que la función ha terminado correctamente.
     """
     global stop
-    ip = input("Ingrese ip: ")
-    ip = "10.65.4.102"
     stop = False
     while stop == False:
         thread1 = threading.Thread(name="Server",target=server)
-        thread2 = threading.Thread(name="Client",target=cliente, args=(ip,))
+        thread2 = threading.Thread(name="Client",target=cliente)
         thread1.start()
         thread2.start()
         thread1.join()
