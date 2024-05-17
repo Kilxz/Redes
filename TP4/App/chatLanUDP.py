@@ -78,10 +78,9 @@ def initialize():
     global stop
     userName = input("Ingrese nombre de usuario: ")
     stop = False
-    thread1 = threading.Thread(name="listen",target=listen)
+    thread1 = threading.Thread(name="listen",target=listen, daemon=True)
     thread2 = threading.Thread(name="speak",target=speak, args=(userName,))
     thread1.start()
     thread2.start()
-    thread1.join()
     thread2.join()
     return 0
