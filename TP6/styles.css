@@ -1,0 +1,20 @@
+body {
+    background-color: turquoise;
+}
+.logo {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+#formulario {
+    margin-top: 50px;
+}
