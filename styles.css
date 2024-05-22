@@ -1,0 +1,25 @@
+body {
+    background-color: white;
+}
+.logo {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+#enviar {
+    background-color: #2ecc71;
+    width: 100px;
+    height: 40px;
+}
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+#formulario {
+    margin-top: 50px;
+}
