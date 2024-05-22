@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encuesta equipos de fútbol</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="code.js"></script>
 </head>
 <body>
     <div>
@@ -14,8 +15,7 @@
         <img src="https://www.uncuyo.edu.ar/assets/imgs/logo_uncu23.png"> </img> 
     </div>
     <div id="formulario">
-        <form name="form" id= "form1" action="verificar.php" method="POST"
-        onsubmit="return validar();">
+        <form name="form" id= "form1" action="verificar.php" method="POST" onsubmit="return validar();">
         <label for="email">Ingrese su email: </label>
         <input type="text" name="email" id=”email_en_email”>
         <br> <br>
@@ -33,7 +33,7 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escudo_del_Club_Atl%C3%A9tico_San_Lorenzo_de_Almagro.svg/512px-Escudo_del_Club_Atl%C3%A9tico_San_Lorenzo_de_Almagro.svg.png" class="logo"> </img> <br>
         <input type="radio" id="otro" name="opcion" value="otro">
         <label for="otro">Otro</label><br>
-        <p><input type="submit"></p>
+        <p><input type="submit" id = "enviar"></p>
     </div>
 </form>
 </body>

@@ -1,5 +1,5 @@
 body {
-    background-color: turquoise;
+    background-color: white;
 }
 .logo {
     width: 20px;
@@ -7,6 +7,11 @@ body {
     margin-left: 10px;
 }
 
+#enviar {
+    background-color: #2ecc71;
+    width: 100px;
+    height: 40px;
+}
 div {
     display: flex;
     justify-content: center;
