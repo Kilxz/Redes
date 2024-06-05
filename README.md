@@ -9,4 +9,4 @@ Contenidos que se desarrollan:
 * TP4: Sockets UDP y TCP, NMAP
 * TP5: SSH, FPT, VNC, Rsync, SSHFS
 * TP6: Servidores y aplicaciones web con Apache. HTML, CSS, JavaScript, PHP y websockets con Python.
-* TP7:
+* TP7: Webhttrack, nping, hping3, certificados, phishing y firewall con UFW
