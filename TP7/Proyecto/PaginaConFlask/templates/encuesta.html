@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css' ) }}">
+    <title>Encuesta equipos de fútbol</title>
+</head>
+<body>
+    <div>
+        <img src="https://moodle.cuc.uncu.edu.ar/pluginfile.php/1/theme_academi/footerlogo/1713883854/escudo%20uncuyo%20color%202023.png" id="uncuyo"> </img> 
+    </div>
+
+    {% if estado == "inicio" %}
+    <div id="titulo">
+        <h1> ¡Elige tu equipo favorito! </h1> 
+    </div>
+
+    
+    <div id="formulario">  
+        <form name="form" id= "form1" action="/resultados" method="POST">
+            <label for="email">Ingrese su email: </label>
+            <input type="text" name="email" id=”email_en_email”> <br>
+            <input type="radio" id="boca" name="opcion" value="Boca" class="opcionRadio">
+            <label for="boca">Boca</label>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/CABJ70.png/800px-CABJ70.png" class="logo"> </img> <br>
+            <input type="radio" id="river" name="opcion" value="River" class="opcionRadio">
+            <label for="river">River</label>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Logo_River_Plate.png" class="logo"> </img> <br>
+            <input type="radio" id="racing" name="opcion" value="Racing" class="opcionRadio">
+            <label for="racing">Racing</label>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Escudo_de_Racing_Club_%282014%29.svg" class="logo"> </img> <br>
+            <input type="radio" id="sanlorenzo" name="opcion" value="San Lorenzo" class="opcionRadio">
+            <label for="sanlorenzo">San Lorenzo</label>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escudo_del_Club_Atl%C3%A9tico_San_Lorenzo_de_Almagro.svg/512px-Escudo_del_Club_Atl%C3%A9tico_San_Lorenzo_de_Almagro.svg.png" class="logo"> </img> <br>
+            <input type="radio" id="otro" name="opcion" value="Otro" class="opcionRadio">
+            <label for="otro">Otro</label> <br>
+            <p><input type="submit" id ="enviar"></p>
+        </form>
+    </div>
+    {% else %}
+    <br>
+    <div id="titulo">
+        <h1> ¡Gracias por votar! </h1> <br>
+    <div id="titulo2">
+        <h1> ¡Resultados! </h1> 
+    </div>
+    <div id="resultados">
+        <label for="boca" class="resultadoLab">Boca</label>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/CABJ70.png/800px-CABJ70.png" class="logo"> </img> <span class="votos"> - Votos: <span id = "bocares"> {{ votos[0] }}</span> </span> <br>
+        <label for="river" class="resultadoLab">River</label>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Logo_River_Plate.png" class="logo"> </img> <span class="votos"> - Votos: <span id = "riverres">{{ votos[1] }}</span> </span> <br>
+        <label for="racing" class="resultadoLab">Racing</label>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Escudo_de_Racing_Club_%282014%29.svg" class="logo"> </img> <span class="votos"> - Votos: <span id = "racingres">{{ votos[2] }}</span> </span> <br>
+        <label for="sanlorenzo" class="resultadoLab">San Lorenzo</label>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escudo_del_Club_Atl%C3%A9tico_San_Lorenzo_de_Almagro.svg/512px-Escudo_del_Club_Atl%C3%A9tico_San_Lorenzo_de_Almagro.svg.png" class="logo"> </img> <span class="votos"> - Votos: <span id = "sanlorenzores">{{ votos[3] }}</span> </span> <br>
+        <label for="otro" class="resultadoLab">Otro</label> <span class="votos"> - Votos: <span id = "otrores">{{ votos[4] }}</span> </span> <br>
+    </div>
+    {% endif %}
+
+</body>
+</html>
