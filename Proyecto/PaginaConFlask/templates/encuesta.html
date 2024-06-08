@@ -4,12 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css' ) }}">
-    <title>Encuesta equipos de fútbol</title>
+    <link rel="icon" href="{{url_for('static', filename='img/favicon.png')}}" type="image/png">
+    {% if estado == "inicio" %}
+    <title>Encuesta Equipos</title>
+    {% else %}
+    <title>Resultados</title>
+    {% endif %}
 </head>
+
 <body>
     <div>
         <img src="https://moodle.cuc.uncu.edu.ar/pluginfile.php/1/theme_academi/footerlogo/1713883854/escudo%20uncuyo%20color%202023.png" id="uncuyo"> </img> 
     </div>
+
+    {% if error == "email" %}
+    <div class="alerta">
+        <p> El email ingresado no es correcto. Por favor, verifique </p>
+    </div>
+    {% endif %}
+
+    {% if error == "votoingresado" %}
+    <div class="alerta">
+        <p> El email ingresado ya registro su voto </p>
+    </div>
+    {% endif %}
+
+    {% if error == "opcion" %}
+    <div class="alerta">
+        <p> Debe seleccionar una opción </p>
+    </div>
+    {% endif %}
 
     {% if estado == "inicio" %}
     <div id="titulo">
@@ -40,9 +64,9 @@
     </div>
     {% else %}
     <br>
-    <div id="titulo">
-        <h1> ¡Gracias por votar! </h1> <br>
     <div id="titulo2">
+        <h1> ¡Gracias por votar! </h1>
+    <div id="titulo3">
         <h1> ¡Resultados! </h1> 
     </div>
     <div id="resultados">

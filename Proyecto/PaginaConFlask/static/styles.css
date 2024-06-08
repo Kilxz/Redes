@@ -27,12 +27,25 @@ body {
 }
 
 div {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     width: auto;
     height: auto;
     text-align:center;
+}
+
+.alerta {
+    background-color: #ff4d4d; 
+    color: #ffffff;
+    box-shadow: 0 0 10px #990000;
+    padding: 20px; 
+    border-radius: 10px; 
+    height: 5px;
+    width: 350px;
+    display: flex;
+    margin: 20px auto;
+    border: 1px solid #990000;
 }
 
 .opcionRadio {
@@ -41,7 +54,7 @@ div {
 }
 
 .resultadoLab {
-    display:flex;
+    display: inline-block;
 }
 
 span {
@@ -50,4 +63,13 @@ span {
 
 #formulario {
     margin-top: 10px;
+}
+
+h1 {
+    font-family: 'Tahoma';
+}
+
+input[type="text"] {
+    border-radius: 8px;
+    border: 0.1px solid #534b4b; 
 }
