@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/tomas/Redes/CheckTramasRedes/CheckTramasRedes.csproj": {}
+    "E:\\Universidad\\Redes\\TP1\\CheckTramasRedes\\CheckTramasRedes.csproj": {}
   },
   "projects": {
-    "/home/tomas/Redes/CheckTramasRedes/CheckTramasRedes.csproj": {
+    "E:\\Universidad\\Redes\\TP1\\CheckTramasRedes\\CheckTramasRedes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/tomas/Redes/CheckTramasRedes/CheckTramasRedes.csproj",
+        "projectUniqueName": "E:\\Universidad\\Redes\\TP1\\CheckTramasRedes\\CheckTramasRedes.csproj",
         "projectName": "CheckTramasRedes",
-        "projectPath": "/home/tomas/Redes/CheckTramasRedes/CheckTramasRedes.csproj",
-        "packagesPath": "/home/tomas/.nuget/packages/",
-        "outputPath": "/home/tomas/Redes/CheckTramasRedes/obj/",
+        "projectPath": "E:\\Universidad\\Redes\\TP1\\CheckTramasRedes\\CheckTramasRedes.csproj",
+        "packagesPath": "C:\\Users\\tomas\\.nuget\\packages\\",
+        "outputPath": "E:\\Universidad\\Redes\\TP1\\CheckTramasRedes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/tomas/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\tomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -32,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -58,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

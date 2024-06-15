@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CheckTramasRedes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d72b192e10c6b96a0ce768cd586df9b4285a53fd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("CheckTramasRedes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CheckTramasRedes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

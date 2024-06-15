@@ -3,10 +3,12 @@ Repositorio utilizado para almacenar los códigos de los trabajos prácticos de 
 
 Contenidos que se desarrollan:
 
-* TP1: Manejo de tramas
-* TP2: Cisco Packet Tracer, creación de redes y VLAN
-* TP3: Cisco Packet Tracer, creación de tablas de ruteo, configuración de interfaces, NAT, RIP, OSPF, DHCP
-* TP4: Sockets UDP y TCP, NMAP
-* TP5: SSH, FPT, VNC, Rsync, SSHFS
+* TP1: Manejo de tramas.
+* TP2: Cisco Packet Tracer, creación de redes y VLAN.
+* TP3: Cisco Packet Tracer, creación de tablas de ruteo, configuración de interfaces, NAT, RIP, OSPF, DHCP.
+* TP4: Sockets UDP y TCP, NMAP.
+* TP5: SSH, FPT, VNC, Rsync, SSHFS.
 * TP6: Servidores y aplicaciones web con Apache. HTML, CSS, JavaScript, PHP y websockets con Python.
-* TP7: Webhttrack, nping, hping3, certificados, phishing y firewall con UFW
+* TP7: Webhttrack, nping, hping3, certificados, phishing y firewall con UFW.
+* Proyecto 1: Página web del TP 6, pero realizada con el framework Flask.
+* Proyecto 2: Clon del aula abierta de la facultad de ingeniería que almacena los datos del usuario y le loguea en la página real.
